@@ -342,3 +342,15 @@ h3 {
   }
 }
 </style>
+
+|
+<RouterLink to="/stats" class="button">Stats</RouterLink>
+|
+<RouterLink to="/notes">Notes</RouterLink>
+
+import { createRouter, createWebHistory } from "vue-router"; import Viewnotes
+from "../views/ViewNotes.vue"; import ViewStats from "../views/ViewStats.vue";
+const router = createRouter({ history:
+createWebHistory(import.meta.env.BASE_URL), routes: [ { path: "/notes", name:
+"notes", component: Viewnotes, }, { path: "/stats", name: "stats", component:
+ViewStats, }, ], }); export default router;

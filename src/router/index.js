@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
 import Viewnotes from "../views/ViewNotes.vue";
 import ViewStats from "../views/ViewStats.vue";
 
@@ -9,17 +8,18 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: HomeView,
+      component: Viewnotes,
+    },
+
+    {
+      path: "/notes",
+      name: "notes",
+      component: Viewnotes,
     },
     {
       path: "/stats",
       name: "stats",
       component: ViewStats,
-    },
-    {
-      path: "/notes",
-      name: "notes",
-      component: Viewnotes,
     },
   ],
 });
